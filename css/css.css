@@ -1,0 +1,117 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: black;
+    padding: 10px;
+    border-style: ridge;
+    border-color: violet;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto) ;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    font-family: 'Pixelify Sans'; font-size: 25px; color: blueviolet;
+
+    background-color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: white;
+    outline: none;
+    cursor: pointer
+}
+
+.btn:hover {
+    border-color: violet;
+
+}
+
+.Webring {
+    width: 300px;
+    max-width: 80%;
+    background-color: black;
+    padding: 10px;
+    border-style: ridge;
+    border-color: violet;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.Achivments {
+
+    width: 300px;
+    max-width: 80%;
+    background-color: black;
+    padding: 10px;
+    border-style: ridge;
+    border-color: violet;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px;
+
+}
+
+.grid-parent-grid {
+    display: grid;
+    gap:10px;
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.grid-parent-row {
+    display: table-row;
+    grid-template-columns: repeat(4, 5fr);
+}
+.grid-parent-row-2{
+    display: table-row;
+    grid-template-columns: repeat(4, 5fr);
+}
+
+.grid-parent-row-3{
+    display: table-row;
+    grid-template-columns: repeat(4, 5fr);
+}
+
+.center {
+        padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+
+
+.column-left{ 
+    float: left; 
+    width: 33.333%; 
+}
+.column-right{ 
+    float: right;
+     width: 33.333%;
+     }
+.column-center{ 
+    display: inline-block; 
+    width: 33.333%; }
