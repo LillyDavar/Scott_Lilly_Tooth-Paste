@@ -668,7 +668,7 @@ const textNodes = [
             {
                 text: 'thats true I guess, fine lets back away.',
 
-                nextText: 12
+                nextText: 16
             }, {
                 text: 'Yeah but than we will dream..',
                 nextText: 39
@@ -855,7 +855,7 @@ const textNodes = [
     {
         id: 52,
         text: 'Help me brush my Teeth!',
-        backgroundImage: "assets/Brush Teeth.jpg",
+        backgroundImage: "assets/Brush-Teeth.jpg",
         options: [
             {
                 text: 'Enter Game?',
