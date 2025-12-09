@@ -8,6 +8,7 @@ const CreditsWElement = document.getElementById('CreditsW')
 const quickElement = document.getElementById('quick')
 const TamaElement = document.getElementById('Tama')
 const milkElement = document.getElementById('milk')
+
 // the button element and the image element.
 const optionButtonsElement = document.getElementById('option-buttons')
 const backgroundElement = document.getElementById('backgroundImage') // changed to use the <img id="backgroundImage">
@@ -20,6 +21,7 @@ function startGame() {
     showTextNode(1)
 
 }
+
 const btn = document.getElementById('option-buttons')
 
 if (btn) {
@@ -391,11 +393,15 @@ const textNodes = [
                 text: 'Makes sense, shall we brush your teeth than?',
                 nextText: 20
             }, {
-                text: 'check your reflection?'
+                text: 'check your reflection?',
+                nextText: 53
             }
 
         ]
     },
+
+
+
     {
         id: 20,
         text: 'Yes! I picked up the toothbrush',
@@ -592,7 +598,7 @@ const textNodes = [
         options: [
             {
                 text: 'Ok we should really change you out of those that cant be good for you',
-                NextText: 34
+                nextText: 34
 
             }, {
                 text: 'dont care, bed now.',
@@ -855,7 +861,7 @@ const textNodes = [
     {
         id: 52,
         text: 'Help me brush my Teeth!',
-        backgroundImage: "assets/Brush-Teeth.jpg",
+        backgroundImage: "assets/Brush-teeth.jpg",
         options: [
             {
                 text: 'Enter Game?',
@@ -867,6 +873,54 @@ const textNodes = [
         ]
     },
 
+        {
+        id: 53,
+        text: 'Yep that is me...definately me. Can we look at something else please',
+                backgroundImage: "assets/mirror2.jpg",
+        options: [
+            {
+                text: 'sure',
+
+                nextText: 55
+            },
+            {
+                text: 'In a moment.',
+                nextText: 54
+            }
+        ]
+    },
+
+        {
+        id: 54,
+        text: 'I said Lets look at something else! I dont want to see myself!',
+                backgroundImage: "assets/mirror.jpg",
+        options: [
+            {
+                text: 'ok ok, lets look somewhere else',
+
+                nextText: 55
+            },
+
+
+        ]
+    },
+
+        {
+        id: 55,
+        text: 'Its a bathroom.',
+                backgroundImage: "assets/Bathroom.jpg",
+        options: [
+            {
+                text: '.ok, you should brush your teeth...',
+
+                nextText: 20
+            },
+
+
+        ]
+    },
+
+        
 
 
 
