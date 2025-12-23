@@ -30,7 +30,7 @@ if (btn) {
         chimeAudio.currentTime = 0
         chimeAudio.play().catch(err => console.warn('Audio play prevented:', err)) //If this is ever used I will cry.
     })
-} 
+}
 
 
 function showTextNode(textNodeIndex) {
@@ -59,28 +59,28 @@ function showTextNode(textNodeIndex) {
         gameStartElement.textContent = state.GameStart ? 'Start the Game!' : '???'
     }
 
-        if (Ending1Element) {
+    if (Ending1Element) {
         Ending1Element.textContent = state.Ending1 ? 'Back onto the computer' : '???'
     }
 
-        if (Ending2Element) {
+    if (Ending2Element) {
         Ending2Element.textContent = state.Ending2 ? 'Go to bed without brushing your teeth. Rude much?' : '???'
     }
 
-        if (Ending3Element) {
+    if (Ending3Element) {
         Ending3Element.textContent = state.Ending3 ? 'Sleepy Time!' : '???'
     }
-        if (CreditsWElement) {
+    if (CreditsWElement) {
         CreditsWElement.textContent = state.CreditsW ? 'The Credits!' : '???'
     }
 
-        if (TamaElement) {
+    if (TamaElement) {
         TamaElement.textContent = state.Tama ? 'Tama Tama' : '???'
     }
-        if (quickElement) {
+    if (quickElement) {
         quickElement.textContent = state.quick ? 'oh sure pick the boring option' : '???'
     }
-        if (milkElement) {
+    if (milkElement) {
         milkElement.textContent = state.milk ? 'I should get a bag of milk...' : '???'
     }
 
@@ -126,7 +126,7 @@ const textNodes = [
             },
             {
                 text: 'Credits',
-                setState: {CreditsW: true},
+                setState: { CreditsW: true },
                 nextText: 3
             }
         ]
@@ -161,7 +161,7 @@ const textNodes = [
     {
         id: 4,
         text: ' Yeah, I mean I had to have been productive look at the time! its already 2 in the morning! I should really get going to bed.',
-                backgroundImage: "assets/computer_on.jpg",
+        backgroundImage: "assets/computer_on.jpg",
         options: [
             {
                 text: 'Sleep is Important',
@@ -178,7 +178,7 @@ const textNodes = [
     {
         id: 5,
         text: 'Yep! Very busy day today so that means I need to get well rested now!',
-                backgroundImage: "assets/computer_on.jpg",
+        backgroundImage: "assets/computer_on.jpg",
         options: [
             {
                 text: 'Continue?',
@@ -192,7 +192,7 @@ const textNodes = [
     {
         id: 6,
         text: 'I turn the computer off and stand up from the desk. Feeling a little bit woozie',
-                backgroundImage: "assets/computer_on.jpg",
+        backgroundImage: "assets/computer_on.jpg",
         options: [
             {
                 text: 'Ok?',
@@ -228,7 +228,7 @@ const textNodes = [
     {
         id: 8,
         text: 'OK I should go to the washroom and brush my teeth than!',
-                backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'Continue?',
@@ -241,7 +241,7 @@ const textNodes = [
     {
         id: 9,
         text: 'Im imagining myself as a character in a game - what if it helps me gather my thoughts?.',
-                backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'Ok than weirdo',
@@ -258,7 +258,7 @@ const textNodes = [
     {
         id: 10,
         text: 'Good question! I dont need to warrent that with a response you know',
-                backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'Im going to assume its been awhile than.',
@@ -271,7 +271,7 @@ const textNodes = [
     {
         id: 11,
         text: 'Im still standing in front of my computer, I should head to the washroom',
-                backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'Back away than?',
@@ -290,7 +290,7 @@ const textNodes = [
     {
         id: 13,
         text: 'You know I remember someone said you can tell a lot about someone based off how well their tamagotchis are taken care of!',
-                backgroundImage: "assets/tama.png",
+        backgroundImage: "assets/tama.png",
         options: [
             {
                 text: 'Oh? hows yours than?',
@@ -303,7 +303,7 @@ const textNodes = [
     {
         id: 15,
         text: 'Mines been dead for a few months now...',
-                backgroundImage: "assets/tama.png",
+        backgroundImage: "assets/tama.png",
         options: [
             {
                 text: 'Ah of course its dead.',
@@ -317,7 +317,7 @@ const textNodes = [
     {
         id: 14,
         text: ' Ah my mighty computer! Still cant believe I found it in the garbage! Lucky find I guess.',
-                backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'Back away from the garbage computer',
@@ -332,7 +332,7 @@ const textNodes = [
     {
         id: 12,
         text: 'You got it! Backing away from the computer now!',
-                backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'Ok',
@@ -350,7 +350,7 @@ const textNodes = [
     {
         id: 16,
         text: 'I turn from the computer and am met with the rest of my bedroom',
-            backgroundImage: "assets/bedroom.png",
+        backgroundImage: "assets/bedroom.png",
         options: [
             {
                 text: 'We should leave your room now',
@@ -369,7 +369,7 @@ const textNodes = [
     {
         id: 17,
         text: 'Ah the bathroom! its a little tiny but its nice, in that way that bathrooms tend to be!',
-                backgroundImage: "assets/Bathroom.jpg",
+        backgroundImage: "assets/Bathroom.jpg",
         options: [
             {
                 text: '...What?',
@@ -382,7 +382,7 @@ const textNodes = [
     {
         id: 19,
         text: 'Oh you know what I mean! Its nice and safe...I feel safe here.',
-                backgroundImage: "assets/Bathroom.jpg",
+        backgroundImage: "assets/Bathroom.jpg",
         options: [
             {
                 text: '...ok, should we Brush our teeth?',
@@ -405,7 +405,7 @@ const textNodes = [
     {
         id: 20,
         text: 'Yes! I picked up the toothbrush',
-                backgroundImage: "assets/toothbrush.jpg",
+        backgroundImage: "assets/toothbrush.jpg",
         options: [
             {
                 text: '...are you going to grab the toothpaste?',
@@ -419,7 +419,7 @@ const textNodes = [
     {
         id: 51,
         text: 'oh yeah of course! ',
-                backgroundImage: "assets/toothbrush.jpg",
+        backgroundImage: "assets/toothbrush.jpg",
         options: [
             {
                 text: '...Than do that please.',
@@ -432,7 +432,7 @@ const textNodes = [
     {
         id: 21,
         text: 'I grab the tooth pase and spread it over the tooth brush',
-                backgroundImage: "assets/bathroomscene.jpg",
+        backgroundImage: "assets/bathroomscene.jpg",
         options: [
             {
                 text: 'brush your teeth now I guess.',
@@ -489,7 +489,7 @@ const textNodes = [
     {
         id: 26,
         text: 'Guess I can go to bed now.',
-            backgroundImage: "assets/bathroomscene.jpg",
+        backgroundImage: "assets/bathroomscene.jpg",
         options: [
             {
                 text: 'Dont you think you are forgetting something?',
@@ -503,10 +503,10 @@ const textNodes = [
         ]
     },
 
-        {
+    {
         id: 27,
         text: 'NO I dont think so! Nothing comes to mind at all...NOPE. Why would you ask that?',
-            backgroundImage: "assets/bathroomscene.jpg",
+        backgroundImage: "assets/bathroomscene.jpg",
         options: [
             {
                 text: 'You know what? I dont care, you should just go to bed',
@@ -533,13 +533,13 @@ const textNodes = [
     {
         id: 29,
         text: 'Ah its good to be back in my room.',
-            backgroundImage: "assets/bedroom.png",
+        backgroundImage: "assets/bedroom.png",
         options: [
             {
                 text: 'You should go to Bed',
 
                 nextText: 30
-            }, 
+            },
 
         ]
     },
@@ -547,7 +547,7 @@ const textNodes = [
     {
         id: 30,
         text: 'Its my Bed! It looks comfy...',
-                backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: 'you should lay down in the bed?',
@@ -564,7 +564,7 @@ const textNodes = [
     {
         id: 31,
         text: 'Now that I brushed my teeth I can go to bed! Good thing I havent changed out of ym pajamas or that would take another whoel 15 minutes!',
-                backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: 'You have been in the same pajamas all day?',
@@ -577,7 +577,7 @@ const textNodes = [
     {
         id: 32,
         text: 'Yep!',
-                backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: '...really',
@@ -594,7 +594,7 @@ const textNodes = [
     {
         id: 33,
         text: 'Actually these are the same ones from a few days ago. I havent had the energy to change out of them I guess.',
-                backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: 'Ok we should really change you out of those that cant be good for you',
@@ -610,7 +610,7 @@ const textNodes = [
     {
         id: 34,
         text: 'Nah, that means I got to do the laundry to, and that is not an available feature in this little demo :3',
-                backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: '...ok than? I guess lets get you to bed',
@@ -624,7 +624,7 @@ const textNodes = [
     {
         id: 35,
         text: 'Ok than!',
-                backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: 'continue?',
@@ -638,7 +638,7 @@ const textNodes = [
     {
         id: 36,
         text: 'I crawl into bed, its comfy and warm, after a few minutes I fall alseep.',
-                backgroundImage: "assets/bedlaying.png",
+        backgroundImage: "assets/bedlaying.png",
         options: [
             {
                 text: 'Continue to End',
@@ -652,11 +652,12 @@ const textNodes = [
     {
         id: 37,
         text: 'Ending 3: Teeth Brushed',
-                backgroundImage: "assets/good-end.png",
+        backgroundImage: "assets/good-end.png",
         options: [
             {
                 text: 'Back to main menue?',
                 setState: { Ending3: true },
+                setState: { BrushedTeeth: false },
 
 
                 nextText: 1
@@ -669,7 +670,7 @@ const textNodes = [
     {
         id: 38,
         text: 'hhhmmm. I should really go to bed...',
-         backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'thats true I guess, fine lets back away.',
@@ -686,7 +687,7 @@ const textNodes = [
     {
         id: 39,
         text: 'oh yeah good point.',
-                        backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'continue',
@@ -698,7 +699,7 @@ const textNodes = [
     }, {
         id: 40,
         text: 'I sit back down and turn the computer on. another 3 hours cant hurt to much',
-                        backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'continue to ending',
@@ -711,7 +712,7 @@ const textNodes = [
     {
         id: 41,
         text: 'Ending 1: 5 more hours...',
-                        backgroundImage: "assets/computer ending.png",
+        backgroundImage: "assets/computer ending.png",
         options: [
             {
                 text: 'Back to main menue?',
@@ -726,7 +727,7 @@ const textNodes = [
     {
         id: 42,
         text: 'Ok it may be a matress thats falling apart that I bought at a garage sale but still! its better than that air matress...',
-                        backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: 'Back away from the gross bed.',
@@ -742,7 +743,7 @@ const textNodes = [
     {
         id: 43,
         text: 'I should really brush my teeth though...',
-                        backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: 'Thats true I guess, lets go do that.',
@@ -758,7 +759,7 @@ const textNodes = [
     {
         id: 44,
         text: 'Well I guess I can do it in the morning...',
-                        backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: 'oh we both know you wont, just go to bed and stop tallying.',
@@ -772,7 +773,7 @@ const textNodes = [
     {
         id: 45,
         text: '...right. Of course I wont, havent done it in days, why am I worring about it now?',
-                        backgroundImage: "assets/bed.png",
+        backgroundImage: "assets/bed.png",
         options: [
             {
                 text: 'continue',
@@ -786,7 +787,7 @@ const textNodes = [
     {
         id: 46,
         text: 'I crawl into my gross bed, after about an hour I fall into a restless sleep',
-                        backgroundImage: "assets/bedlay2.jpg",
+        backgroundImage: "assets/bedlay2.jpg",
         options: [
             {
                 text: 'continue to Ending?',
@@ -800,7 +801,7 @@ const textNodes = [
     {
         id: 47,
         text: 'Ending 2: Gross teeth in a gross Bed',
-            backgroundImage: "assets/bedlay2.jpg",
+        backgroundImage: "assets/bedlay2.jpg",
         options: [
             {
                 text: 'Back to main menue?',
@@ -814,7 +815,7 @@ const textNodes = [
     {
         id: 48,
         text: 'Well you know..',
-                backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: '...?',
@@ -829,7 +830,7 @@ const textNodes = [
     {
         id: 49,
         text: 'There are games where you can see the charaters thoughs. RIght on the screen, you know?',
-                backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'Yeah I think I do...',
@@ -844,7 +845,7 @@ const textNodes = [
     {
         id: 50,
         text: 'So I thought, if someone is reading my mind, I need to be very focused so I dont blurt out too much!',
-                backgroundImage: "assets/computerscene.jpg",
+        backgroundImage: "assets/computerscene.jpg",
         options: [
             {
                 text: 'Ok than I guess...',
@@ -873,10 +874,10 @@ const textNodes = [
         ]
     },
 
-        {
+    {
         id: 53,
         text: 'Yep that is me...definately me. Can we look at something else please',
-                backgroundImage: "assets/mirror2.jpg",
+        backgroundImage: "assets/mirror2.jpg",
         options: [
             {
                 text: 'sure',
@@ -890,10 +891,10 @@ const textNodes = [
         ]
     },
 
-        {
+    {
         id: 54,
         text: 'I said Lets look at something else! I dont want to see myself!',
-                backgroundImage: "assets/mirror.jpg",
+        backgroundImage: "assets/mirror.jpg",
         options: [
             {
                 text: 'ok ok, lets look somewhere else',
@@ -905,10 +906,10 @@ const textNodes = [
         ]
     },
 
-        {
+    {
         id: 55,
         text: 'Its a bathroom.',
-                backgroundImage: "assets/Bathroom.jpg",
+        backgroundImage: "assets/Bathroom.jpg",
         options: [
             {
                 text: '.ok, you should brush your teeth...',
@@ -920,7 +921,7 @@ const textNodes = [
         ]
     },
 
-        
+
 
 
 
